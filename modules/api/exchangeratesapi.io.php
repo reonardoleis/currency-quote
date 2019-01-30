@@ -40,19 +40,6 @@ function buyPrice($to, $from, $endpoint = false, $params = false){
 }
 
 
-
-function pricesInPeriod($base){
-	$year = date("Y");
-	$month = date("m");
-	$day = date("d");
-	$start_date = "$year-$month-" . ($day-7);
-	$end_date = "$year-$month-$day";
-	$target_url = URL . '/history?start_at=' . $start_date . '&end_at=' . $end_date . '&base=' . $base;
-	return json_decode(file_get_contents($target_url), true);
-	
-}
-
-
 if(isset($_GET['function'])){
 	if(@$_GET['function']==0){
 		$from_amount = $_GET['from_amount'];
