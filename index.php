@@ -5,7 +5,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
   <script type="text/javascript">
     function buyPriceAjax(){
-      var xhttp;
+        var xhttp;
         xhttp = new XMLHttpRequest();
         var from = document.getElementById('from').value;
         var to = document.getElementById('to').value;
